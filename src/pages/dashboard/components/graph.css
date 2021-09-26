@@ -1,0 +1,9 @@
+#dashboard-graph .box-graph {
+    height: 310px;
+    position: relative;
+}
+
+#statistic {
+    width: 100%;
+    height: 100%;
+}

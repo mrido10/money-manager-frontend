@@ -1,0 +1,15 @@
+#dahboard-header .ctn-header .circle {
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
+}
+#dahboard-header .ctn-header .box-amount {
+    height: 50px;
+    padding: 0 10px;
+    min-width: 138px;
+}
+
+#dahboard-header i {
+    font-size: 25px;
+    color: #fff;
+}

@@ -1,0 +1,52 @@
+$grid-gutter-width: 0;
+$primary: #605BFF;  
+
+$border-radius: 15px;
+$border-radius-sm: 10px;
+$border-radius-lg: 20px;
+
+$font-size-base:              1rem;
+$h1-font-size:                $font-size-base * 2;
+$h2-font-size:                $font-size-base * 1.6;
+$h3-font-size:                $font-size-base * 1.4;
+$h4-font-size:                $font-size-base * 1.2;
+$h5-font-size:                $font-size-base * 1.1;
+$h6-font-size:                $font-size-base;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+// poppins
+@import url('https://fonts.googleapis.com/css?family=Poppins'); 
+$bodyBg: #F1F1FF;
+$navWidth: 80px;
+$bodyHeight: 100vh;
+
+#root { height: $bodyHeight; }
+body {
+    font-family: 'Poppins', sans-serif;
+    height: $bodyHeight;
+    background-color: $bodyBg;
+    .box-container {
+        .sidebar {
+            width: 80px;
+            min-width: 80px;
+        }
+    }
+    #navbar {
+        width: 80px;
+        min-width: 80px;
+        .active {
+            background-color: $bodyBg;
+            .itm-active i {
+                color: $primary;
+            }
+        }
+    } 
+}
+
+@media screen and (max-width: 600px) {
+    .box-container {
+        .sidebar {
+            display: none;
+        }
+    }
+}
