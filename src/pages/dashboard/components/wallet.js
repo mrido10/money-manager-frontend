@@ -6,7 +6,7 @@ class Wallet extends Component {
         return(
             <div id='dashboard-wallet' >
                 <h2>Wallet</h2>
-                <div className='box-wallet bg-light rounded-2 w-100'></div>
+                <div className='box-wallet bg-light rounded-2 w-100 shadow-sm'></div>
             </div>
         )
     }

@@ -1,0 +1,60 @@
+#login .login-right-side { z-index: 1; }
+#login .icon-box {
+    width: 75px;
+    min-width: 75px;
+    height: 75px;
+    min-height: 75px;
+}
+
+#login .icon-box i {
+    color: #fff;
+    font-size: 35px;
+}
+
+#login .inp-box, #login .forget-password-box, #login .btn-box { 
+    height: 45px;
+    width: 300px;
+}
+
+#login .label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    background: none;
+    color: #888;
+    padding: 4px 8px;
+    pointer-events: none;
+    transition: all 0.35s;
+    font-size: 16px;
+}
+
+#login input {
+    height: inherit;
+    width: 100%;
+    border: 2px solid #888;
+    outline: none;
+    background: transparent;
+    color: #333;
+    font-size: 16px;
+    text-indent: 16px;
+    transition: all 0.35s;
+}
+
+#login input:focus { border-color: #605BFF}
+#login input:focus ~ .icon {color: #fff}
+#login input:focus ~ .label {
+    background: #fff;
+    color: #333;
+    font-size: 13px;
+    transform: translateY(-35px);
+}
+
+#login .forget-password-box a {
+    font-size: 12px;
+    color: #333;
+}
+
+#login .forget-password-box a:hover {
+    color: #605BFF !important;
+}

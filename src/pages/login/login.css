@@ -1,0 +1,11 @@
+@media screen and (max-width: 992px) {
+    #login .cont-login {
+        width: 100% !important;
+        height: 100% !important;
+        border-radius: 0 !important;
+    }
+
+    #login .wave1 { display: none !important; }
+    #login .wave2 { display: block !important; }
+}
+

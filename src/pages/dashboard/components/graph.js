@@ -92,7 +92,7 @@ class Graph extends Component {
         return(
             <div id='dashboard-graph'>
                 <h2>Statistic</h2>
-                <div className='box-graph bg-light rounded-2 p-4'>
+                <div className='box-graph bg-light rounded-2 p-4 shadow-sm'>
                     <canvas id='statistic' ></canvas>
                 </div>
             </div>

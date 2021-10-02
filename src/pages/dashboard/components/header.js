@@ -52,7 +52,7 @@ class Header extends Component {
         return(
             <div id='dahboard-header'>
                 <h1 className='fw-bold'>Dashboard</h1>
-                <div className='ctn-header container-fluid rounded-3 bg-light p-1'>
+                <div className='ctn-header container-fluid rounded-3 bg-light p-1 shadow-sm'>
                     <div className='row h-100'>
                         {this.state.head.map(val => {
                             return this.compHeader(val)

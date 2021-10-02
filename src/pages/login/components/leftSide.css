@@ -1,0 +1,27 @@
+#login .bx-wave { height: 100%; }
+#login .login-left-side {
+    position: relative;
+}
+#login .title-left-side {
+    z-index: 1;
+}
+#login img {
+    position: absolute;
+    z-index: 0;
+}
+
+#login img.wave1 {
+    height: 100%;
+    right: 0;
+    top: 0;
+    transform: translateX(60%) scaleY(-1);
+}
+
+#login img.wave2 {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    transform: translateY(60%);
+}
+
+#login .wave1-box { width: 30%;}

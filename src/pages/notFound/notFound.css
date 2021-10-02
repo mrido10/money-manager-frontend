@@ -1,0 +1,8 @@
+#not-found div {
+    width: 400px;
+    height: 400px;
+    background-image: url("../../assets/svg/blob1.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
