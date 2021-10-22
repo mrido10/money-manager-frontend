@@ -1,4 +1,9 @@
+import axios from 'axios'
 import React, { Component } from 'react'
+import config from '../../../config/config.json'
+import { getCookie } from '../../../helper/route'
+import { deleteCookie } from '../../../helper/cookie'
+import {withRouter } from 'react-router-dom'
 import './header.css'
 
 class Header extends Component {
@@ -6,23 +11,54 @@ class Header extends Component {
         head: [
             {
                 name: 'Income',
-                amount: 10000000,
+                amount: 0,
                 color: '#605BFF',
                 icon: 'bi bi-box-arrow-in-down'
             },
             {
                 name: 'Expence',
-                amount: 10000,
+                amount: 0,
                 color: '#FFA104',
                 icon: 'bi bi-box-arrow-up'
             },
             {
                 name: 'Total',
-                amount: 1000000,
+                amount: 0,
                 color: '#22C0A6',
                 icon: 'bi bi-wallet2'
             }
         ]
+    }
+
+    getDataHeader = () => {
+        let auth = getCookie('authorization')
+        console.log(auth)
+        // axios({
+        //     method: 'GET',
+        //     url: `${config.server.moneyManager.ip}/getTotalTransactions`,
+        //     headers: {
+        //         authorization: auth 
+        //     }
+        // })
+        // .then(resp => {
+        //     let data = resp.data.data
+        //     const income = this.state.head[0]
+        //     const expence = this.state.head[1]
+        //     const total = this.state.head[2]
+        //     income.amount = data.income.totalAmount
+        //     expence.amount = data.expence.totalAmount
+        //     total.amount = data.total.totalAmount
+        //     this.setState({
+        //         income,
+        //         expence,
+        //         total
+        //     })
+        // })
+        // .catch(err => {
+        //     console.log(err.response)
+        //     deleteCookie('authorization')
+        //     return this.props.history.push('/login')
+        // })
     }
 
     compHeader = val => {
@@ -46,6 +82,7 @@ class Header extends Component {
         circle.forEach((val, idx) => {
             val.style.backgroundColor = this.state.head[idx].color
         })
+        this.getDataHeader()
     }
 
     render() {
@@ -64,4 +101,4 @@ class Header extends Component {
     }
 }
 
-export default Header
+export default withRouter(Header)

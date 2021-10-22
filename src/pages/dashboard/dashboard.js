@@ -32,10 +32,10 @@ class Dashboard extends Component {
         return(
             <div id='dashboard' className='box-container h-100'>
                 <div className='d-flex flex-row bd-highlight mb-3 h-100'>
-                    <div className='sidebar'>
+                    {/* <div className='sidebar'> */}
                         <Navbar />
-                    </div>
-                    <div className='content container-fluid p-4'>
+                    {/* </div> */}
+                    <div className='content container'>
                         <div className='row pb-2'>
                             <Header />
                         </div>
@@ -47,8 +47,8 @@ class Dashboard extends Component {
                                             <Graph />
                                         </div>
                                         <div className='row pt-3'>
-                                            <div className='col pe-2'><Doughnut title={'Income'} seq={1} url={this.state.dougnut1.url} /></div>
-                                            <div className='col ps-2'><Doughnut title={'Expence'} seq={2} backgroundColor={this.state.dougnut2.color} /></div>
+                                            {/* <div className='col pe-2'><Doughnut title={'Income'} seq={1} url={this.state.dougnut1.url} /></div>
+                                            <div className='col ps-2'><Doughnut title={'Expence'} seq={2} backgroundColor={this.state.dougnut2.color} /></div> */}
                                         </div>
                                     </div>
                                     <div className='col col-lg-3 ps-2'>

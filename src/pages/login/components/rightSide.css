@@ -11,9 +11,15 @@
     font-size: 35px;
 }
 
-#login .inp-box, #login .forget-password-box, #login .btn-box { 
+#login .inp-box, #login .forget-password-box, #login .btn-box, #login .notif-box { 
     height: 45px;
     width: 300px;
+}
+#login .notif-box  {
+    height: 12px;
+    font-size: 11px;
+    font-style: italic;
+    color: #dc3545;
 }
 
 #login .label {

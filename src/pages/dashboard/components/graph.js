@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 import Chart from 'chart.js/auto';
 import './graph.css'
+import axios from 'axios';
+import {getCookie} from '../../../helper/route'
+import {ToLogin} from '../../../helper/toLogin'
+import  { Redirect } from 'react-router-dom'
 
 
 class Graph extends Component {
@@ -15,6 +19,22 @@ class Graph extends Component {
     }
 
     showChart = () => {
+        // axios({
+        //     method: 'get',
+        //     baseURL: 'http://localhost:3002',
+        //     url: '/money-manager/getList?listName=account',
+        //     headers: {
+        //         authorization: getCookie('authorization')
+        //     }
+        // })
+        // .then(resp => {
+        //     console.log(resp.data)
+        //     return <Redirect push to='/login'  />
+        // })
+        // .catch(err => {
+        //     console.log(err.response)
+        // })
+
         let data = {
             labels: this.state.statistic.labels.month,
             datasets: [

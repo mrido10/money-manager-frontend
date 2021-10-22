@@ -1,0 +1,10 @@
+{
+    "server": {
+        "auth": {
+            "ip": "http://localhost:3003"
+        },
+        "moneyManager": {
+            "ip": "http://localhost:3002"
+        }
+    }
+}

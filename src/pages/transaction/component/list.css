@@ -1,0 +1,16 @@
+.trans-type{
+    /* color: #fff; */
+    width: 120px;
+}
+.trans-type.income{
+    background-color: #dad9ff;
+    color: #605BFF;
+}
+.trans-type.expence{
+    background-color: #ffdea4;
+    color: #a56b07;
+}
+.trans-type.transfer{
+    background-color: #97ebdd;
+    color: #01a58a;
+}

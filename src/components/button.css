@@ -1,0 +1,15 @@
+button.plus-btn {
+    width: 70px;
+    height: 70px;
+}
+button.plus-btn i {
+    font-size: 37px;
+}
+
+button.button-btn {
+    background-color: #F1F1FF;
+}
+
+button.button-btn i {
+    font-size: 12px;
+}
