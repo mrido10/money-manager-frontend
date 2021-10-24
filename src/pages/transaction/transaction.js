@@ -5,6 +5,7 @@ import { DropdownBtn, PlusButton } from '../../components/button'
 import { ListGroup } from './component/list'
 
 import './transaction.css'
+import { AddTransaction } from './component/addTransaction'
 
 class Transaction extends Component {
     constructor(props) {
@@ -65,7 +66,8 @@ class Transaction extends Component {
                             </div>
                         </div>
                     </div>
-                    <PlusButton linkTo='/addTransaction' />
+                    <PlusButton targetFocus='.inp-box input' />
+                    <AddTransaction />
                 </div>
             </div>
         )

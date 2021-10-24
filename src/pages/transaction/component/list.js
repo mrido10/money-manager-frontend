@@ -24,6 +24,16 @@ export let ListGroup = props => {
                 <List id={'b'} category='jajan' name='bakso bakar' account='kas' ammount={20000} type='Expence' childToParrent={childToParrent} />
                 <List id={'c'} category='gaji' name='' account='BRI' ammount={1000000000} type='Income' childToParrent={childToParrent} />
                 <List id={'d'} category='transfer' name='' account='BCA - BRI' ammount={1000000} type='transfer' childToParrent={childToParrent} />
+                <List id={'d'} category='transfer' name='' account='BCA - BRI' ammount={1000000} type='transfer' childToParrent={childToParrent} />
+                <List id={'d'} category='transfer' name='' account='BCA - BRI' ammount={1000000} type='transfer' childToParrent={childToParrent} />
+                <List id={'d'} category='transfer' name='' account='BCA - BRI' ammount={1000000} type='transfer' childToParrent={childToParrent} />
+                <List id={'d'} category='transfer' name='' account='BCA - BRI' ammount={1000000} type='transfer' childToParrent={childToParrent} />
+                <List id={'d'} category='transfer' name='' account='BCA - BRI' ammount={1000000} type='transfer' childToParrent={childToParrent} />
+                <List id={'d'} category='transfer' name='' account='BCA - BRI' ammount={1000000} type='transfer' childToParrent={childToParrent} />
+                <List id={'d'} category='transfer' name='' account='BCA - BRI' ammount={1000000} type='transfer' childToParrent={childToParrent} />
+                <List id={'d'} category='transfer' name='' account='BCA - BRI' ammount={1000000} type='transfer' childToParrent={childToParrent} />
+                <List id={'d'} category='transfer' name='' account='BCA - BRI' ammount={1000000} type='transfer' childToParrent={childToParrent} />
+                <List id={'d'} category='transfer' name='' account='BCA - BRI' ammount={1000000} type='transfer' childToParrent={childToParrent} />
             </div>
         </div>
     )

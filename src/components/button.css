@@ -13,3 +13,8 @@ button.button-btn {
 button.button-btn i {
     font-size: 12px;
 }
+
+button.dropdown-btn2 {
+    height: 45px;
+    border: 2px solid #888;
+}
