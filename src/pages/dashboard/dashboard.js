@@ -51,9 +51,9 @@ class Dashboard extends Component {
                                             <div className='col ps-2'><Doughnut title={'Expence'} seq={2} backgroundColor={this.state.dougnut2.color} /></div> */}
                                         </div>
                                     </div>
-                                    <div className='col col-lg-3 ps-2'>
+                                    {/* <div className='col col-lg-3 ps-2'>
                                         <Wallet />
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>

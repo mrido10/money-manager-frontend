@@ -4,7 +4,7 @@ import './button.css'
 
 export let Button = props => {
     return (
-        <button type='button' className={`button-btn btn rounded-circle ms-2 me-2`} onClick={props.action} onDoubleClick={props.deleteElement}>
+        <button type='button' className={`button-btn btn rounded-circle ms-2`} onClick={props.action} onDoubleClick={props.deleteElement}>
             <i className={`bi ${props.icon}`}></i>
         </button>
     )
@@ -47,7 +47,6 @@ export let DropdownBtn = props => {
     useEffect(() => {
         let btn = document.getElementById(props.id)
         btn.innerHTML = name
-        console.log(btn.value)
     })
     return(
         <div className={`btn-group mt-1 mb-1 ${props.w100}`}>

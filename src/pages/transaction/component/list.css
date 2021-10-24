@@ -1,6 +1,33 @@
+.list-item > :last-child {
+    display: flex !important;
+}
+.cont-btn-list-item > :first-child {
+    display: none !important;
+}
+.trans-category {
+    font-size: 12px;
+    width: 70px;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;  
+}
+
+.trans-name {
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.trans-ammount {
+    width: 100px;
+    font-size: 13px;
+}
+
 .trans-type{
-    /* color: #fff; */
-    width: 120px;
+    width: 80px;
+    padding: 3px;
+    box-sizing: border-box;
+    font-size: 11px;
 }
 .trans-type.income{
     background-color: #dad9ff;
@@ -13,4 +40,42 @@
 .trans-type.transfer{
     background-color: #97ebdd;
     color: #01a58a;
+}
+
+/* @media screen and (max-width: 992px) {
+    .trans-name {
+        width: 320px;
+    }
+} */
+
+/* @media screen and (max-width: 768px) {
+    .trans-name {
+        width: 220px;
+    }
+} */
+
+@media screen and (max-width: 600px) {
+    .list-item > :last-child {
+        display: none !important;
+    }
+    .cont-btn-list-item > :first-child {
+        display: flex !important;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .trans-category {
+        width: 50px;
+    }
+    .trans-ammount {
+        width: 80px;
+        font-size: 12px;
+    }
+
+    .trans-name {
+        font-size: 13px;
+    }
+    .trans-account {
+        font-size: 12px;
+    }
 }
